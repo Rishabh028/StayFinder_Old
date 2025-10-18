@@ -8,7 +8,7 @@
 
 ## 🚀 Live Demo
 
-👉 [View StayFinder on GitHub Pages](https://zippy-gumdrop-c1bd83.netlify.app/)
+👉 [View StayFinder](https://stayfinder0.netlify.app/#)
 ---
 
 
