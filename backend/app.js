@@ -10,8 +10,6 @@ dotenv.config();
 const app = express();
 
 // Middleware
-// filepath: stayfinder/backend/app.js
-// ...
 const corsOptions = {
   origin: 'https://stayfinder0.netlify.app'
 };
@@ -27,12 +25,12 @@ mongoose.connect(mongoURI)
 
 // Import Routes
 const authRoutes = require('./routes/auth');
-const propertyRoutes = require('./routes/property'); // ADD THIS LINE
+const property = require('./routes/property'); // ADD THIS LINE
 const bookingRoutes = require('./routes/booking');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/properties', propertyRoutes); // ADD THIS LINE
+app.use('/api/properties', property); // ADD THIS LINE
 app.use('/api/bookings', bookingRoutes);
 
 // Basic route for testing
