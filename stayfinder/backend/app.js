@@ -10,7 +10,21 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'https://zippy-gumdrop-c1bd83.netlify.app' }));
+const allowedOrigins = [
+  'https://stayfinder0.netlify.app'
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+
+app.use(cors(corsOptions));
 app.use(express.json()); // Body parser for JSON requests
 
 // Database Connection
