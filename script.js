@@ -6,6 +6,8 @@ let currentViewMode = 'grid'; // 'grid' or 'list'
 let currentPropertyId = null;
 let currentBackgroundIndex = 0;
 let isSearchModalOpen = false;
+
+const API_URL = 'stayfinderold-production.up.railway.app';
 // Define your background images (videos removed as per request)
 const backgrounds = [
     { type: 'image', src: 'stayfinder/images/bg2.png', thumbnail: 'stayfinder/images/bg2.png' },
