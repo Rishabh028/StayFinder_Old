@@ -979,7 +979,7 @@ async function handleLogin(e) {
     const password = document.getElementById('login-password').value;
 
     try {
-        const res = await fetch('stayfinderold-production.up.railway.app/api/auth/login', {
+        const res = await fetch('https://stayfinderold-production.up.railway.app//api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -1008,7 +1008,7 @@ async function handleRegister(e) {
     const password = document.getElementById('register-password').value;
 
     try {
-        const res = await fetch('stayfinderold-production.up.railway.app/api/auth/register', {
+        const res = await fetch('https://stayfinderold-production.up.railway.app/api/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, password, role: "Student" })
