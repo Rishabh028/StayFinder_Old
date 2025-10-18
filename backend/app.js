@@ -10,7 +10,12 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'https://zippy-gumdrop-c1bd83.netlify.app' }));
+// filepath: stayfinder/backend/app.js
+// ...
+const corsOptions = {
+  origin: 'https://stayfinder0.netlify.app'
+};
+app.use(cors(corsOptions));
 app.use(express.json()); // Body parser for JSON requests
 
 // Database Connection
