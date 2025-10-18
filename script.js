@@ -979,7 +979,7 @@ async function handleLogin(e) {
     const password = document.getElementById('login-password').value;
 
     try {
-        const res = await fetch('https://stayfinderold-production.up.railway.app//api/auth/login', {
+        const res = await fetch('https://stayfinderold-production.up.railway.app/api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
