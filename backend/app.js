@@ -11,8 +11,7 @@ const app = express();
 
 // Middleware
 const allowedOrigins = [
-  'https://stayfinder0.netlify.app',
-  'https://zippy-gumdrop-c1bd83.netlify.app' // Keeping the old one just in case
+  'https://stayfinder0.netlify.app'
 ];
 
 const corsOptions = {
