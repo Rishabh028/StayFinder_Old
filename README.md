@@ -8,7 +8,9 @@
 
 ## 🚀 Live Demo
 
-👉 [View StayFinder](https://stayfinder0.netlify.app/#)
+👉 [View StayFinder-1](https://stayfinder0.netlify.app/#)
+👉 [View StayFinder-2](https://frosty-willow-281.meku.app/)
+👉 [View StayFinder-3](https://comfort-scape.lovable.app)
 ---
 
 
